@@ -68,11 +68,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+          resizeToAvoidBottomInset: false,
           body: SafeArea(
               child: Container(
             color: Colors.black12,
-            child: SingleChildScrollView(
-              child: Column(
+            child:  Column(
                 children: [
                   Container(
                     margin: const EdgeInsets.only(top: 20, left: 10, right: 10),
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-            ),
+
           ))),
     );
   }
